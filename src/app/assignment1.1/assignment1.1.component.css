@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.leftTop {
+  width: 50%;
+  height: 50%;
+  background-color: #ff0000;
+}
+.leftButtom {
+  width: 50%;
+  height: 50%;
+  background-color: #008800;
+}
+.rightTop {
+  width: 50%;
+  height: 50%;
+  background-color: #0000ff;
+}
+.rightButtom {
+  width: 50%;
+  height: 50%;
+  background-color: #000000;
+}

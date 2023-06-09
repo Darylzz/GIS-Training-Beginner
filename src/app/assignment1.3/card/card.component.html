@@ -1,0 +1,11 @@
+<h3>Comments</h3>
+<div
+  class="cardComment"
+  *ngFor="let commentList of commentLists; let i = index"
+>
+  <span>Name : {{ commentList.name }}</span>
+  <span> Time : {{ commentList.time }}</span>
+  <p>Comment : {{ commentList.comment }}</p>
+  <button (click)="onEdit(i)">Edit</button>
+  <button (click)="onDelete(i)">Delete</button>
+</div>

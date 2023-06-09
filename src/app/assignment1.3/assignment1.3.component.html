@@ -1,0 +1,10 @@
+<h1>Comment Simulators</h1>
+<app-form
+  (commentData)="getData($event)"
+  [commentList]="commentLists"
+  [currentComment]="currentComment"
+></app-form>
+<app-card
+  [commentLists]="commentLists"
+  (currentCommentIndex)="editComment($event)"
+></app-card>

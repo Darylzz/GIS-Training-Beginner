@@ -1,0 +1,9 @@
+.locatorContainer {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #fff;
+  padding: 20px;
+  top: 30px;
+  right: 50px;
+  border-radius: 8px;
+}

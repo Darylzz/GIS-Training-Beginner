@@ -1,0 +1,17 @@
+<div class="formComment">
+  <h3>New Comment</h3>
+  <label for="name">Name :</label>
+  <input id="name" name="name" type="text" [(ngModel)]="formComment.name" />
+  <br />
+  <label for="comment">Comment :</label>
+  <br />
+  <textarea
+    name="comment"
+    id="comment"
+    cols="30"
+    rows="4"
+    [(ngModel)]="formComment.comment"
+  ></textarea>
+  <br />
+  <button (click)="onSubmitForm()">Submit</button>
+</div>

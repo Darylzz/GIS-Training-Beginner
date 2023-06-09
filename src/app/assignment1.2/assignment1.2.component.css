@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+}
+.Header {
+  background-color: lightblue;
+}
+.Header h1 {
+  font-size: 26px;
+  color: blue;
+}
+.Content {
+  padding-top: 1%;
+}
+.Content strong {
+  color: lightblue;
+}
+table {
+  border-collapse: collapse;
+}
+th,
+tr,
+td {
+  border: 1px solid black;
+}
+img {
+  width: 30%;
+  height: 35%;
+  position: absolute;
+  right: 0;
+}
