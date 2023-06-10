@@ -15,7 +15,7 @@ export class MapService {
   mapView: MapView | null;
   graphic: Graphic | null;
 
-  constructor(private locatorService: LocatorService) {}
+  constructor() {}
 
   createMap(container: any) {
     this.map = new Map({
