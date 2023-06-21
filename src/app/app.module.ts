@@ -19,6 +19,8 @@ import { MapLocateService } from './assignment3/service/map-locate.service';
 import { Assignment13Component } from './assignment1.3/assignment1.3.component';
 import { FormComponent } from './assignment1.3/form/form.component';
 import { CardComponent } from './assignment1.3/card/card.component';
+import { BookmarkComponent } from './assignment3/bookmark/bookmark.component';
+import { InputTextModule } from 'primeng/inputtext';
 
 const routes = [
   { path: '1.1', component: Assignment11Component },
@@ -42,12 +44,14 @@ const routes = [
     Assignment13Component,
     FormComponent,
     CardComponent,
+    BookmarkComponent,
   ],
   imports: [
     BrowserModule,
     InputNumberModule,
     FormsModule,
     ButtonModule,
+    InputTextModule,
     RouterModule.forRoot(routes),
   ],
   providers: [MapService, LocatorService, MapLocateService],

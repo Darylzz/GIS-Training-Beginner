@@ -1,2 +1,52 @@
-<div id="viewMap" #viewMap></div>
-<app-assignment2></app-assignment2>
+<div class="mapCon">
+  <div id="viewMap" #viewMap></div>
+  <div class="container">
+    <h1>Locator</h1>
+    <p>Title:</p>
+    <input type="text" pInputText [(ngModel)]="title" />
+    <p>Latitude:</p>
+    <p-inputNumber
+      mode="decimal"
+      [minFractionDigits]="8"
+      [(ngModel)]="latitude"
+      (focusout)="realTime()"
+    ></p-inputNumber>
+    <p>Longitude:</p>
+    <p-inputNumber
+      mode="decimal"
+      [minFractionDigits]="8"
+      [(ngModel)]="longitude"
+      (focusout)="realTime()"
+    ></p-inputNumber>
+    <br />
+    <br />
+    <button
+      pButton
+      class="p-button-raised"
+      label="Add"
+      (click)="clickAddBookmark()"
+    ></button>
+    <button
+      pButton
+      class="p-button-raised p-button-secondary"
+      label="Clear"
+      (click)="clickClearLocator()"
+    ></button>
+  </div>
+  <div class="bookmark">
+    <h1>Bookmark</h1>
+    <div
+      class="bookmarkItem"
+      *ngFor="let item of bookmark; let i = index"
+      (click)="clickGetInfo(item)"
+    >
+      <p>{{ item.title }}</p>
+      <button
+        pButton
+        class="p-button-raised p-button-danger"
+        label="Delete"
+        (click)="clickDelete(i)"
+      ></button>
+    </div>
+  </div>
+</div>

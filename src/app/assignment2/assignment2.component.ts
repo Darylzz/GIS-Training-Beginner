@@ -22,11 +22,11 @@ export class Assignment2Component implements OnInit {
     this.locatorService.locate = this.locate;
     console.log(this.locate);
     if (this.locate.latitude && this.locate.longitude) {
-      this.mapLocateService.clearGraphic();
-      this.mapLocateService.updateGraphic(
-        this.locate.latitude!,
-        this.locate.longitude!
-      );
+      //   this.mapLocateService.clearGraphic();
+      //   this.mapLocateService.updateGraphic(
+      // this.locate.latitude!,
+      // this.locate.longitude!
+      //   );
     }
   }
 }
